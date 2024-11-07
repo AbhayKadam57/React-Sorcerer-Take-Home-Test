@@ -162,6 +162,7 @@ const EditorComponent = () => {
     const contentState = editorState.getCurrentContent();
     const rawContentState = convertToRaw(contentState);
     localStorage.setItem("EditorData", JSON.stringify(rawContentState));
+    alert("Data saved successfully");
   };
 
   return (
